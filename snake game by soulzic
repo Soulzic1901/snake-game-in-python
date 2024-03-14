@@ -5,7 +5,7 @@ import time
 
 screen = turtle.Screen()
 screen.title('Snake made by a small dev')
-screen.setup(width = 800, height = 700)
+screen.setup(width = 700, height = 666)
 screen.tracer(0)
 turtle.bgcolor('black')
 
@@ -151,9 +151,9 @@ while True:
                 if food.distance(snake) < 20:
                         time.sleep(1)
                         screen.clear()
-                        screen.bgcolor('white')
+                        screen.bgcolor('black')
                         scoring.goto(0,0)
-                        scoring.write("    GAME OVER  \n Your Score is {}".format(score),align="center",font=("Courier",30,"bold"))
+                        scoring.write("    GAME OVER\nyou hit your head!  \n Your Score is {}".format(score),align="center",font=("Courier",30,"bold"))
 
 
                 
